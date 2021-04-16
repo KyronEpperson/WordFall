@@ -1,18 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+    
 
-public class Save : MonoBehaviour
+[System.Serializable]
+public class Save
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<int> livingTargetPositions = new List<int>();
+    public List<int> livingTargetsTypes = new List<int>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int hits = 0;
+    public int shots = 0;
+
+
 }
